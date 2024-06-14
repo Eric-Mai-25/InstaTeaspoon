@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <div>
-        <div className='flex justify-between'>
+    <div className='shadow-sm border-b sticky top-0 bg-white z-30 p-3'>
+        <div className='flex justify-between items-center max-w-8xl mx-auto'>
             <Link href='/' className='hidden lg:inline-flex'>
                 <Image src='/next.svg'
                 width={40} height={40} alt='instagram logo'/>
