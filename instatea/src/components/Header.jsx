@@ -1,6 +1,9 @@
+'use client'
+
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { signIn } from 'next-auth/react'
 
 export default function Header() {
   return (
@@ -11,7 +14,7 @@ export default function Header() {
                 width={40} height={40} alt='instagram logo'/>
             </Link>
             <input type='text' placeholder='Search' className='bg-gray-50 border border-gray-200 rounded text-sm w-full py-2 px-4 max-w-[210px]'/>
-            <button className='text-sm font-semibold text-blue-500'>Log In
+            <button onClick={()=> signIn()} className='text-sm font-semibold text-blue-500'>Log In
             </button>
         </div> 
     </div>
