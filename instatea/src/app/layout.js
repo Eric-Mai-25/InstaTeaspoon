@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       
     <html lang="en">
       <body className={inter.className}>
-      <Header/>        <Header/>        <Header/>
+        <Header/>
         {children}</body>
     </html>
     </SessionWrapper>
